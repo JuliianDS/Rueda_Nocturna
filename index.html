@@ -9,20 +9,31 @@
 </head>
 
 <body>
-    <header
-        class="bg-[#14213D] rounded-b-2xl  text-blue-100 w-full p-4 mb-10 flex justify-self-center items-center max-w-7xl ">
-        <img src="./img/logo.jpeg" alt="" class="w-70">
-        <h1 class="font-bold text-7xl ms-auto mr-10">Nocturna</h1>
+    <header class="flex flex-col  justify-center items-center  md:max-w-7xl md:flex-row bg-[#0E1C37] rounded-b-2xl  text-blue-100 w-full p-4 mb-10  md:mx-auto ">
+        <img src="./img/Rueda Noturna logo.png" alt="" class="w-60">
+        <nav class="flex flex-col items-center gap-4 md:mx-auto md:flex-row">
+            <a href="./index.html#rutas"
+                class="inline-block w-50 bg-gray-600 py-3 px-5 hover:bg-amber-700 rounded-lg focus:bg-amber-700-800 focus:ring-2 focus:ring-amber-400 text-center font-semibold">
+                Rutas</a>
+            <a href="./index.html#funciona"
+                class="inline-block w-50 bg-gray-600 py-3 px-5 hover:bg-amber-700 rounded-lg focus:bg-amber-700-800 focus:ring-2 focus:ring-amber-400 text-center font-semibold">
+                ¿Como funciona?</a>
+        </nav>
+        <a href="#"
+            class="inline-block w-40 bg-amber-600 my-5 py-3 px-5 hover:bg-amber-700 rounded-lg focus:bg-amber-700-800 focus:ring-2 focus:ring-amber-400 text-center font-semibold">
+            Inscribete</a>
     </header>
-    <main class="container justify-self-center max-w-4xl">
-
-        <section class="max-w-xl p-3 justify-self-center">
+    <main class="container mx-auto md:max-w-7xl">
+        <h2 class="ml-8 text-3xl font-semibold" id="rutas">
+            Nuestras Rutas
+        </h2>
+        <section class="grid grid-cols-1 gap-4 p-3 md:grid-cols-3 ">
 
             <!--=========================================================================   primer carta   ==========-->
-            <article class="shadow-2xl border border-gray-400 rounded-xl hover:border-2 hover:border-amber-600 hover:shadow-amber-600">
+            <article class="bg-amber-50 shadow-2xl border w-full border-gray-400 rounded-xl hover:border-2 hover:border-amber-600 hover:shadow-amber-600">
                 <img src="./img/luces.jpeg" alt="" object-cover class="w-full h-90 rounded-sm">
                 <div class="px-4">
-                    <span class="inline-block mt-4 bg-green-300 text-xs p-1 rounded">Facil</span>
+                    <span class="inline-block mt-4 bg-green-300 text-xs p-1 rounded">Facíl</span>
                     <h3 class="py-4 font-bold text-2xl">Luces del centro</h3>
                     <dl class="grid grid-cols-3 mb-4">
                         <div>
@@ -47,11 +58,11 @@
             </article>
             <!--======================================================================     segunda carta   ==========-->
 
-            <article class="shadow-2xl border border-gray-400 my-5 hover:border-2 rounded-xl hover:border-amber-600 hover:shadow-amber-600">
+            <article class="bg-amber-50 shadow-2xl w-full border border-gray-400 hover:border-2 rounded-xl hover:border-amber-600 hover:shadow-amber-600">
                 <img src="./img/mirador.jpeg" alt="" object-cover class="w-full h-90 rounded-sm">
                 <div class="px-4">
                     <span class="inline-block mt-4 bg-green-300 text-xs p-1 rounded">Medio</span>
-                    <h3 class="py-4 font-bold text-2xl">Luces del centro</h3>
+                    <h3 class="py-4 font-bold text-2xl">Miradores</h3>
                     <dl class="grid grid-cols-3 mb-4">
                         <div>
                             <dt class="text-xs text-gray-600">Distancia</dt>
@@ -76,8 +87,8 @@
             
             <!--=================================================================   tercera carta   ==========-->
 
-            <article class="shadow-2xl border border-gray-400 hover:border-2 rounded-xl hover:border-amber-600 hover:shadow-amber-600">
-                <img src="./img/luces.jpeg" alt="" object-cover class="w-full h-90 rounded-sm">
+            <article class="bg-amber-50 shadow-2xl w-full border border-gray-400 hover:border-2 rounded-xl hover:border-amber-600 hover:shadow-amber-600 flex flex-col">
+                <img src="./img/luna_palmas.png" alt="" object-cover class="w-full h-90 rounded-sm">
                 <div class="px-4">
                     <span class="inline-block mt-4 bg-green-300 text-xs p-1 rounded">Dificil</span>
                     <h3 class="py-4 font-bold text-2xl">Luna en las Palmas</h3>
@@ -104,10 +115,60 @@
             </article>
 
         </section>
-        <section class="max-w-xl p-3 justify-self-center">
-            
+        <section class="md:mx-auto md:max-w-7xl mt-10 p-3 "
+            id="funciona">
+            <div class="w-full px-4 border-2 border-amber-600 rounded-4xl hover:border-2 hover:border-amber-600 shadow-2xl hover:shadow-amber-600">
+                    <h2 class="text-3xl text-center font-semibold p-6">¿Como funciona?</h2>
+                    <dl class="md:grid md:grid-cols-4 mb-4 px-4 flex flex-col text-center">
+                        <div>
+                            <dt class="text-2xl text-amber-600 font-semibold">Elige tu ruta</dt>
+                            <dd class="font-semibold">Revisa los niveles, distancias 
+                                <br>y precios de nuestras opciones disponibles</dd>
+                        </div>
+                        <div>
+                            <dt class="text-2xl text-amber-600 font-semibold">Inscríbete</dt>
+                            <dd class="font-semibold">Incribete llenando el formulario.</dd>
+                        </div>
+                        <div>
+                            <dt class="text-2xl text-amber-600 font-semibold">Recoge tu equipo</dt>
+                            <dd class="font-semibold">Equipate los implementos de seguridad 
+                                <br>casco, literna y candado.
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="text-2xl text-amber-600 font-semibold">De rodada</dt>
+                            <dd class="font-semibold">Salimos desde nuestra sede hacia 
+                                <br>la aventura</dd>
+                        </div>
+                    </dl>
+                    <a href="./prototipo_nocturna/prototipo.html"
+                        class="inline-block bg-amber-600 w-full my-5 py-3 px-5 hover:bg-amber-700 rounded-lg  focus:bg-amber-700-800 focus:ring-2 focus:ring-amber-400 text-center font-semibold">Inscribete</a>
+                </div>
         </section>
     </main>
+    <footer class="flex flex-col justify-center items-center md:max-w-7xl md:flex-row bg-[#0E1C37] rounded-t-2xl  text-blue-100 w-full p-4 mt-10  md:mx-auto">
+        <div class="grid w-full grid-cols-1 py-5 gap-4 text-center md:grid-cols-3">
+            <div>
+                <h2 class="text-3xl">Rueda libre</h2>
+                <address>
+                    Correo: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
+                </address>
+            </div>
+
+            <div>
+                <h2 class="text-3xl">Contacto</h2>
+                <small>&copy; 2026 Rueda Libre</small>
+            </div>
+
+            <div>
+                <h2 class="text-3xl">horarios</h2>
+                <dl>
+                    <dt>Jueves a Sábado</dt>
+                    <dd>7:30 p. m. - Duracion de Ruta</dd>                    
+                </dl>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
